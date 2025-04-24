@@ -4,3 +4,162 @@ body {
   padding: 0;
   border: 0;
 }
+
+body{
+  font-family: "Bagle Fat One", system-ui;
+  background-color: white;
+  width: 100%;
+  color: #333;
+}
+
+body p{
+  font-size: 1.2rem;
+}
+
+/* create grid container */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr  auto auto;
+  grid-template-areas: "navbar" "main" "news" "footer";
+  row-gap: 40px;
+}
+
+
+/* navbar layout */
+header {
+  background-color: beige;
+  width: 100%;
+  grid-area: navbar;
+  padding-bottom: 20px;
+  border-bottom: 3px solid green;
+}
+
+.navig {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.navig a {
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  font-weight: bolder;
+}
+.navig a:hover,
+.navig a:focus{
+  background-color: rgb(72, 201, 72);
+}
+
+.navig li{
+  grid-column: 1;
+}
+
+.navig li:nth-child(4) {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
+}
+
+.login{
+  display: inline-block;
+  background-color: rgb(178, 232, 97);
+  border-radius: 10px;
+  width: 7rem;
+}
+
+.home img{
+  width: 4rem;
+  height: auto;
+}
+
+
+/* main content are "something important" */
+.main-container{
+  grid-area: main;
+  margin-bottom: 20px;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+.main-container img{
+  width: 100%;
+  height: auto;
+}
+
+
+/* news sidebar area */
+
+.news{
+  background-color: rgb(235, 235, 187);
+  grid-area: news;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  padding: 15px;
+  border-top: 3px solid green;
+}
+
+h2{
+  font-size: 2.5rem;
+}
+
+h3{
+  margin: 10px 0 15px;
+}
+
+.news p{
+  margin-bottom: 25px;
+}
+
+
+/* footer layout */
+
+footer{
+  grid-area: footer;
+  background-color: rgb(173, 220, 103);
+  font-size: 2rem;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+
+/* mobile first media query */
+
+@media (min-width: 768px) {
+  .grid-container {
+      grid-template-columns: 1fr 3fr;
+      grid-template-rows: auto 1fr auto;
+      grid-template-areas: "navbar navbar" "news main" "footer footer";
+      column-gap: 3rem;
+  }
+
+  .navig {
+      display: grid;
+      grid-template-columns: repeat(3, auto) 1fr;
+      align-items: end;
+      padding-bottom: 10px;
+  }
+
+  .navig li {
+      grid-column: span 1;
+      justify-content: start;
+  }
+
+  .navig li:nth-child(4) {
+      grid-column: 4;
+      justify-self: end;
+  }
+}
