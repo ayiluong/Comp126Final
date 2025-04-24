@@ -101,9 +101,15 @@
   .nav-collapse a:hover{
     text-decoration: underline;
   }
-  
+  .logo{
+    height: 4rem;
+    width: auto;
+    padding: 20px;
+}
+
   /* Footer Styles */
 footer {
+    grid-area: footer;
     background-color:#89c2eb;
     text-align: center;
     padding: 1rem;

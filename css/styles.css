@@ -11,17 +11,12 @@ body{
     background-color: white;
     width: 100%;
     color: #333;
+    line-height: 2;
   }
   
-.logo{
-    height: 4rem;
-    width: auto;
-    padding: 20px;
-}
 
   /* Main Image Section */
   .main-img {
-    grid-area: main;
     text-align: center;
     position: relative;
   }
@@ -30,12 +25,18 @@ body{
     width: 100%;
     height: auto;
   } 
+
+  .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
   .main-img h1 {
     font-family: 'Bagel Fat One', cursive;
     font-size: 3rem;
     color: white;
     text-shadow: 3px 3px #89c2eb;
-    
     position: absolute;
     bottom: 15px;
     left: 50%;
@@ -51,6 +52,7 @@ body{
   }
 
   .reservation{
+    grid-area: reservation;
     background-color:#2f9ca4;
     text-align: center;
     color: white;
@@ -129,3 +131,21 @@ body{
     background-color: #7049b3;
   }
   
+
+/* mobile first media query */
+/* desktop view */
+
+  @media (min-width: 768px) {
+
+  
+    .main{
+      flex-direction: row;
+    }
+
+    .main section{
+      flex: 1;
+    }
+    .updates{
+      margin-left: 30px;
+    }
+  }
