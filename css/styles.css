@@ -5,18 +5,30 @@ body {
   border: 0;
 }
 
-/* css for rest of website (not navbar) */
+/* Use grid container and/or flexbox for layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto auto auto auto;
+  grid-template-areas: "navbar" "topimg" "main" "reservation" "infocard" "footer";
+  gap: 40px;
+}
+
+
+/* css for rest of website (not navbar) separated navbar into own file to remove redundancy */
 body{
     font-family: "Bagle Fat One", system-ui;
     background-color: white;
     width: 100%;
     color: #333;
     line-height: 2;
+    font-size: 18px;
   }
   
 
   /* Main Image Section */
   .main-img {
+    grid-area: topimg;
     text-align: center;
     position: relative;
   }
@@ -30,6 +42,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    grid-area: main;
   }
 
   .main-img h1 {
@@ -45,18 +58,20 @@ body{
 
   .main section{
     margin: 2rem;
-    padding: 1rem;
+    padding: 25px;
     text-align: center;
     background-color: #e0dafd;
     border-radius: 25px;
   }
 
+
+  /* reservation section and button */
   .reservation{
     grid-area: reservation;
     background-color:#2f9ca4;
     text-align: center;
     color: white;
-    padding: 1rem;
+    padding: 1rem 1rem 2rem 1rem;
   }
   
   .welcome h2, .important h2, .reservation h2 {
@@ -67,31 +82,24 @@ body{
 
   .reservation h2{
     color: white;
+    padding: 0;
   }
-
-  .reservation button{
-    background-color: #859be4;
-  }
-
-  .reservation button:hover{
-    background-color: #455fb2;
-  }
-
   
   
-  /* Info Cards */
+  /* Bottom Info Cards */
   .info-cards {
+    grid-area: infocard;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
-    padding: 2rem;
+    padding: 3rem;
     background-color: #e4f8f9;
   }
   
   .info-cards div {
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0 8px 16px rgba(134, 191, 237, 0.2);
+    box-shadow: 0 8px 16px rgba(130, 185, 230, 0.2);
     padding: 1.5rem;
     text-align: center;
   }
@@ -111,33 +119,38 @@ body{
   
   .info-cards p {
     margin-bottom: 1rem;
-    font-size: 1rem;
   }
   
 
 /* All buttons */
-  button {
-    background-color: #a384f3; 
-    border: none;
-    padding: 0.5rem 1.5rem;
-    font-family: 'Sour Gummy', cursive;
-    color: white;
-    border-radius: 25px;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #7049b3;
-  }
-  
+.info-cards a, .reservation a {
+  background-color: #a384f3; 
+  color: white;
+  text-decoration: none;
+  font-family: 'Sour Gummy', cursive;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  padding: 0.5rem 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.info-cards a:hover, .info-cards a:focus {
+  background-color: #7049b3;
+}
+
+.reservation a{
+  background-color: #859be4;
+}
+
+.reservation a:hover, .reservation a:focus{
+  background-color: #455fb2;
+}
+
 
 /* mobile first media query */
 /* desktop view */
 
   @media (min-width: 768px) {
-
-  
     .main{
       flex-direction: row;
     }
@@ -145,7 +158,5 @@ body{
     .main section{
       flex: 1;
     }
-    .updates{
-      margin-left: 30px;
-    }
+
   }

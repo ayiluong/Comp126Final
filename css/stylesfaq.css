@@ -13,10 +13,10 @@ body{
 }
 
 body p{
-  font-size: 1.2rem;
+  font-size: 18px;
 }
 
-/* create grid container */
+/* create grid container for layout */
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -28,7 +28,7 @@ body p{
 /* main faq and image section*/
 main{
   grid-area: main;
-  margin: 30px;
+  margin: 0 30px;
 }
 
 h1{
@@ -43,6 +43,7 @@ main img{
   border-radius: 25px;
 }
 
+/* faq dropdown formatting questions and answers */
 .faq_body{
   background-color: white;
   padding: 0 25px;
@@ -59,7 +60,7 @@ summary{
   transition: all 0.3s ease-in-out;
 }
 
-summary:hover{
+summary:hover, summary:focus{
   background-color: #c8bdfc;
 }
 
@@ -69,29 +70,35 @@ details div{
   line-height: 2;
 }
 
-button {
-  background-color: #a384f3; 
-  border: none;
-  padding: 0.5rem 1.5rem;
-  font-family: 'Sour Gummy', cursive;
-  color: white;
-  border-radius: 25px;
-  font-size: 1.2rem;
-  transition: background-color 0.3s ease;
-  display: block;
-  margin: 25px auto;
-  }
 
-button:hover {
+/* reservation question button format */
+#reserve {
+  background-color: #a384f3; 
+  color: white;
+  text-decoration: none;
+  font-family: 'Sour Gummy', cursive;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  padding: 0.5rem 1.5rem;
+  display: block;
+  text-align: center;
+  width: 200px;
+  margin: 10px auto;
+  
+}
+
+#reserve:hover, #reservation:focus {
   background-color: #7049b3;
 }
 
-/* updates sidebar area */
+/* updates aside area */
 .updates{
-  background-color: #dbfdff;
   grid-area: updates;
+  background-color: #dbfdff;
   padding: 25px;
   height: auto;
+  display: flex;
+  flex-direction: column;
   border-radius: 25px;
 }
 
@@ -110,6 +117,8 @@ h3{
   line-height: 2;
 }
 
+
+/* more help section */
 .more{
   color: #2f9ca4;
   margin: 30px;
@@ -117,11 +126,19 @@ h3{
   border: 3px solid #2f9ca4;
   border-radius: 25px;
 }
-/* mobile first media query */
 
+.more a {
+  color: #2f9ca4;
+}
+
+
+/* mobile first media query */
+/* desktop view */
 @media (min-width: 768px) {
+
+  /* change position of update section to be next to main content area */
   .grid-container {
-      grid-template-columns: 1fr 3fr;
+      grid-template-columns: 1fr 2fr;
       grid-template-rows: auto 1fr auto;
       grid-template-areas: "navbar navbar" "updates main" "footer footer";
       column-gap: 3rem;
