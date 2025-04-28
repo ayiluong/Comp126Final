@@ -110,7 +110,6 @@ body{
   background-color: #7049b3;
 }
 
-/*Media query for desktop*/
 @media (min-width: 768px) {
     h1{
       font-size: 5rem;
@@ -119,9 +118,3 @@ body{
     .main{
       flex-direction: row;
     }
-
-    .main section{
-      flex: 1;
-    }
-
-  }
