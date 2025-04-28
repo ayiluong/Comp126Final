@@ -4,7 +4,6 @@ body {
   padding: 0;
   border: 0;
   text-align: center;
-  margin-bottom: 500px;
   
 }
 
@@ -36,27 +35,33 @@ width: 95%;
   background-color: #e0dafd;
   padding: 3%;
   border-radius: 25px;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
+
 .section{
   background-color: #e0dafd;
   padding: 3%;
   border-radius: 25px;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 
+.catCrew{
+  background-color: #2f9ca4;
+  border-radius: 25px;
+  margin-bottom: 100px;
+  padding: 50px;
+}
+.catCrew h2{
+  color: white;
+
+}
 .card-holder {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  background-color: #2f9ca4;
   color: white;
-  border-radius: 25px;
-  margin-bottom: 100px;
-  width: 100%;
 }
-
 
 .bsf{
   display: flex;
@@ -67,7 +72,6 @@ width: 95%;
   color: white;
   border-radius: 25px;
   margin-bottom: 100px;
-  width: 100%;
 }
 
 .bsf form {
@@ -83,7 +87,7 @@ width: 95%;
 
 .bsf fieldset {
   margin: 0;
-  padding: 0;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -155,11 +159,12 @@ width: 95%;
 
 .card {
   flex: 0 1 300px;
-  padding: 10px;
+  padding: 20px;
   margin: 20px auto;
   background-color: #e4f8f9;
   color: #455fb2;
-  border: solid 10px #455fb2;
+  border: 5px solid #455fb2;
+  border-radius: 20px;
   overflow: hidden;
   height: auto;
   display: flex;
@@ -171,7 +176,7 @@ width: 95%;
 
 .card:hover {
   transform: translateY(-10px); 
-  box-shadow: 0 8px 16px black;
+  box-shadow: 0 8px 16px rgba(4, 12, 19, 0.2);
 }
 
 
@@ -185,7 +190,11 @@ width: 95%;
   text-align: center;
 }
 img{
-  width: 100%;
+  width: 15rem;
+  height: 9rem;
+  object-fit: cover;
+  border-radius: 15px;
+  padding-bottom: 10px;
 }
 
 .card-holder form {
@@ -211,12 +220,8 @@ img{
   padding: 10px;
 }
 
-label:hover{
-  background-color: #455fb2;
-}
-
 input:checked {
-  outline: 2px solid #455fb2;
+  outline: 1px solid #455fb2;
 }
 
 h2{
@@ -254,7 +259,6 @@ h1{
   transition: background-color 0.3s ease;
 }
 
-
 .contents a:hover, .contents a:focus {
   background-color: #7049b3;
 }
@@ -268,14 +272,14 @@ h1{
 }
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   .gallery{
     display: flex;
     flex-flow: wrap;
   }
   .contents{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: fit-content 3fr;
     gap: 10px;
   }
@@ -283,12 +287,14 @@ h1{
     height: fit-content;
     align-self: center;
   }
+  /*
   .card-holder{
     grid-column: 1 / span 2;
   }
   .maincontent{
     grid-column: 1 / span 2;
-  }
+  } */
+
   .bsf{
     grid-column: 1 / span 2;
   }
