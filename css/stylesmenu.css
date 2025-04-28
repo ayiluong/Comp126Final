@@ -1,6 +1,96 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
-  border: 0;
+margin: 0;
+padding: 0;
+border: 0;
+}
+
+/* Grid Stuff */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+    "navbar" 
+    "main" 
+    "footer";
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "menu-1" 
+    "pics-1" 
+    "menu-2" 
+    "pics-2";
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Menu */
+
+h1 {
+  text-align: center;
+}
+
+.menu-1, .menu-2 {
+  margin: 10px;
+  color: #333;
+  background-color: #e0dafd;
+  padding: 15px 30px;
+  border-radius: 25px;
+}
+
+h1, h2 {
+  font-family: 'Sour Gummy', cursive;
+  color: #5c47c4;
+}
+
+h3 {
+  font-family: "Bagle Fat One", system-ui;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Bagle Fat One", system-ui;
+}
+
+.price {
+  font-weight: bold;
+}
+
+/* Pictures */
+
+.pics-1, .pics-2 {
+  display: flex;
+  align-items: center;
+  height: min-content;
+}
+
+img {
+  height: auto; 
+  max-height: 300px;
+  width: 100%;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+/* Desktop view */
+@media (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 0.75fr;
+    grid-template-areas: 
+    "menu-1 pics-1" 
+    "menu-2 pics-2";
+    gap: 40px;
+  }
+
+  .pics-1 {
+    max-height: 600px;
+  }
 }
