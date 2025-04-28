@@ -38,12 +38,20 @@ h1 {
 
 .menu-1, .menu-2 {
   margin: 10px;
+  color: #333;
 }
 
 h1, h2 {
   font-family: 'Sour Gummy', cursive;
+  color: #333;
 }
 
+h2{
+  background-color: #e0dafd;
+  padding: 5px;
+  border-radius: 10px;
+
+}
 h3 {
   font-family: "Bagle Fat One", system-ui;
 }
