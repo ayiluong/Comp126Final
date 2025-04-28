@@ -5,7 +5,7 @@
     <meta name="viewport" 
     content="width=device-width,initial-scale=1.0"/>
     <title>Cat Tales Cafe!</title>
- 
+
     <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Cherry+Bomb+One&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Yomogi&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/stylescats.css">
     <link rel="stylesheet" href="css/nav_footer.css">
@@ -15,25 +15,160 @@
   <body>
     <div class = "grid-container">
       <header>
-        <img class = "logo" src = "img/CT-logo.png" alt = "Cat Tales Logos">
+        <a href="index.html"><img class = "logo" src = "img/CT-logo.png" alt = "Cat Tales Logos"></a>
         <nav class="nav-collapse">      
           <ul>
-            <li class="menu-item"><a href="index.html">Home</a></li>
-            <li class="menu-item"><a href="about.html">About</a></li>
-            <li class="menu-item"><a href="menu.html">Menu</a></li>
-            <li class="menu-item"><a href="cats.html">The Cats</a></li>
-            <li class="menu-item"><a href="faqs.html">FAQs</a></li>
-            <li class="menu-item"><a href="help.html">Help</a></li>
+            <li class="menu-item"><a href="index.html" data-scroll>Home</a></li>
+            <li class="menu-item"><a href="about.html" data-scroll>About</a></li>
+            <li class="menu-item"><a href="faqs.html" data-scroll>FAQs</a></li>
+            <li class="menu-item"><a href="cats.html" data-scroll>The Cats</a></li>
+            <li class="menu-item"><a href="help.html" data-scroll>Help</a></li>
           </ul>
         </nav>
-      </header> 
-    
-  <footer>
-    <img class = "logo" src = "img/CT-logo.png" alt = "Cat Tales Logos">
-    <p>431 W. Franklin St., Unit 210, Chapel Hill, NC 27516</p>
-    <p>Open everyday from 12 - 6 PM</p>
-  </footer>
+      </header>
+
+      <div class="photobanner" style="background-image: url(/img/catbanner1.jpg);">
+        <h1>The Cats</h1>
+      </div>
+<div class="contents">
+
+      <div class="pginfo">
+        <h2>Meet our Crew!</h2>
+        <p>Cat Tales Cat Cafe is essentially a large foster home for cats rescued by our nonprofit sister business, Cat Tales Rescue NC.  In addition to the kitties at the cafe, we have many awesome cats available in foster homes.  These kitties are awaiting their turn at the cat cafe but can be adopted straight from their foster homes. If there is a particular kitty that catches your eye, please reach out to confirm their location before making a reservation at the cat cafe.</p>
+      </div>
+
+      <div class="section">
+        <h2>Find a Friend?</h2>
+        <a href="adopt.html">Adopt Today!</a>
+        <a href="previsit.html">Before you Visit!</a>
+      </div>
+
+      <div class="card-holder">
+
+        <form>
+          <fieldset class="loc">
+          <p>Select Location:</p>
+          <label><input name="location" type="radio" value="At Cat Tales" checked> At Cat Tales</label>
+          <label><input name="location" type="radio" value="In Foster"> In Foster</label>
+          <label><input name="location" type="radio" value="Any"> Any</label>
+          </fieldset>
+
+          <fieldset class="stat">
+            <p>Select Status:</p>
+            <label><input name="status" type="radio" value="Available" checked> Available</label>
+            <label><input name="status" type="radio" value="Pending Adoption"> Pending Adoption</label>
+          </fieldset>
+        </form>
+
+        <div class="gallery">
+          <div class="card">
+            <h3>Cat Name</h3>
+            <div class="img">
+              <img class="cat1" src="/img/catcard1.jpg" alt="Cat Name"/>
+            </div>
+            <a href = "#">Learn More About Me!</a>
+          </div>
+  
+          <div class="card">
+            <h3>Cat Name</h3>
+            <div class="img">
+              <img class="cat1" src="/img/catcard2.jpg" alt="Cat Name"/>
+            </div>
+            <a href = "#">Learn More About Me!</a>
+          </div>
+  
+          <div class="card">
+            <h3>Cat Name</h3>
+            <div class="img">
+              <img class="cat1" src="/img/catcard3.jpg" alt="Cat Name"/>
+            </div>
+            <a href = "#">Learn More About Me!</a>
+          </div>
+  
+          <div class="card">
+            <h3>Cat Name</h3>
+            <div class="img">
+              <img class="cat1" src="/img/catcard4.jpg" alt="Cat Name"/>
+            </div>
+            <a href = "#">Learn More About Me!</a>
+          </div>
+  
+          <div class="card">
+            <h3>Cat Name</h3>
+            <div class="img">
+              <img class="cat1" src="/img/catcard5.jpg" alt="Cat Name"/>
+            </div>
+            <a href = "#">Learn More About Me!</a>
+          </div>
+  
+          <div class="card">
+            <h3>Cat Name</h3>
+            <div class="img">
+              <img class="cat1" src="/img/catcard6.jpg" alt="Cat Name"/>
+            </div>
+            <a href = "#">Learn More About Me!</a>
+          </div>
+  
+          <div class="card">
+            <h3>Cat Name</h3>
+            <div class="img">
+              <img class="cat1" src="/img/catcard7.jpg" alt="Cat Name"/>
+            </div>
+            <a href = "#">Learn More About Me!</a>
+          </div>
+  
+          <div class="card">
+            <h3>Cat Name</h3>
+            <div class="img">
+              <img class="cat1" src="/img/catcard8.jpg" alt="Cat Name"/>
+            </div>
+            <a href = "#">Learn More About Me!</a>
+          </div>
+  
+          <div class="card">
+            <h3>Cat Name</h3>
+            <div class="img">
+              <img class="cat1" src="/img/catcard9.jpg" alt="Cat Name"/>
+            </div>
+            <a href = "#">Learn More About Me!</a>
+          </div>
+  
+          <div class="card">
+            <h3>Cat Name</h3>
+            <div class="img">
+              <img class="cat1" src="/img/catcard10.jpg" alt="Cat Name"/>
+            </div>
+            <a href = "#">Learn More About Me!</a>
+          </div>
+  
+          <div class="card">
+            <h3>Cat Name</h3>
+            <div class="img">
+              <img class="cat1" src="/img/catcard11.jpg" alt="Cat Name"/>
+            </div>
+            <a href = "#">Learn More About Me!</a>
+          </div>
+  
+          <div class="card">
+            <h3>Cat Name</h3>
+            <div class="img">
+              <img class="cat1" src="/img/catcard12.jpg" alt="Cat Name"/>
+            </div>
+            <a href = "#">Learn More About Me!</a>
+          </div>
+
+        </div>
+
+      </div>
+
 </div>
+
+      <footer>
+        <a href="index.html"><img class = "logo" src = "img/CT-logo.png" alt = "Cat Tales Logos"></a>
+        <p>431 W. Franklin St., Unit 210, Chapel Hill, NC 27516</p>
+        <p>Open everyday from 12 - 6 PM</p>
+      </footer>
+    </div>
     <script src="js/fastclick.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/fixed-responsive-nav.js"></script>
