@@ -19,7 +19,7 @@ body{
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto auto auto auto;
   grid-template-areas: "navbar" "topimg" "about" "store-photos" "support" "footer";
-  gap: 20px;
+  gap: 40px;
 }
 
 /*Main Image*/
@@ -95,7 +95,7 @@ body{
 }
 
 .support a {
-  background-color: #a384f3; 
+  background-color: #859be4; 
   color: white;
   text-decoration: none;
   font-family: 'Sour Gummy', cursive;
@@ -107,7 +107,7 @@ body{
 }
 
 .support a:hover, .support a:focus {
-  background-color: #7049b3;
+  background-color: #455fb2;
 }
 
 @media (min-width: 768px) {
