@@ -26,8 +26,8 @@ h1 {
     color: #333;
 }
 
-h2 {
-    font-family: 'Sour Gummy', cursive;
+.intro h3 {
+    font-family: "Bagle Fat One", system-ui;
     text-align: center;
     color: #333;
 }
@@ -49,6 +49,12 @@ h2 {
     flex-direction: column;
     gap: 1rem;
     padding: 20px;
+}
+
+.info h2 {
+    margin: 0;
+    text-align: center;
+    font-family: 'Sour Gummy', cursive;
 }
 
 .profile {
@@ -73,6 +79,19 @@ h2 {
     max-width: 100%;
     background-color:#dbfdff;
     margin: 30px;
+}
+
+
+.form h1 {
+    font-family: "Bagle Fat One", system-ui;
+    text-align: center;
+    color: #333;
+}
+
+.form h2 {
+    font-family: 'Sour Gummy', cursive;
+    text-align: center;
+    color: #333;
 }
 
 .form label, input {
