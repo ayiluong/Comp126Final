@@ -104,6 +104,8 @@ h1 {
 .form label, input {
     font-family: "League Spartan", sans-serif;
     color: #333;
+    font-size: 18px;
+    margin: 10px 0;
 }
 
 input {
@@ -144,9 +146,9 @@ button:hover, button:focus {
 
     .info {
         display: grid;
-        margin: 0 auto;
+        margin: 40px auto;
     }
-
+    
     .grid-container {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 1fr 1fr auto;
