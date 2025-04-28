@@ -146,21 +146,17 @@ body{
   background-color: #455fb2;
 }
 
-
-/* mobile first media query */
-/* desktop view */
-
-  @media (min-width: 768px) {
-    h1{
-      font-size: 5rem;
-    }
-
-    .main{
-      flex-direction: row;
-    }
-
-    .main section{
-      flex: 1;
-    }
-
+/*Media query for desktop*/
+@media (min-width: 768px) {
+  h1{
+    font-size: 5rem;
   }
+
+  .main{
+    flex-direction: row;
+  }
+
+  .main section{
+    flex: 1;
+  }
+}
