@@ -4,3 +4,63 @@ body {
   padding: 0;
   border: 0;
 }
+
+body{
+  font-family: "Bagle Fat One", system-ui;
+  background-color: white;
+  width: 100%;
+  color: #333;
+  line-height: 2;
+  font-size: 18px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto auto auto auto;
+  grid-template-areas: "navbar" "topimg" "about" "store-photos" "support" "footer";
+  gap: 40px;
+}
+
+/*Main Image*/
+.main-img {
+  grid-area: topimg;
+  text-align: center;
+  position: relative;
+}
+
+.about-img {
+  width: 100%;
+  height: auto;
+} 
+
+.main-img h1 {
+  font-family: 'Bagel Fat One', cursive;
+  font-size: 3rem;
+  color: white;
+  text-shadow: 3px 3px #89c2eb;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*About section*/
+.about{
+  background-color: #e0dafd;
+  grid-area: about;
+  justify-self: center;
+  text-align: center;
+  padding: 5% 10%;
+}
+
+.about h2{
+  font-family: 'Sour Gummy', cursive;
+  font-size: 2rem;
+  color: #5c47c4;
+}
+
+/*Photo Cube
+.store-photos{
+
+}
