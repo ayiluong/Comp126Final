@@ -19,7 +19,7 @@ body{
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto auto auto auto;
   grid-template-areas: "navbar" "topimg" "about" "store-photos" "support" "footer";
-  gap: 40px;
+  gap: 20px;
 }
 
 /*Main Image*/
@@ -36,7 +36,7 @@ body{
 
 .main-img h1 {
   font-family: 'Bagel Fat One', cursive;
-  font-size: 3rem;
+  font-size: 4rem;
   color: white;
   text-shadow: 3px 3px #89c2eb;
   position: absolute;
@@ -45,22 +45,83 @@ body{
   transform: translateX(-50%);
 }
 
+.main a{
+  color: black;
+}
+
+.main a:hover, .main a:focus{
+  color: #5c47c4;
+}
 /*About section*/
 .about{
   background-color: #e0dafd;
   grid-area: about;
   justify-self: center;
   text-align: center;
-  padding: 5% 10%;
+  padding: 1rem 3rem;
 }
 
-.about h2{
+.about h2, .support h2{
   font-family: 'Sour Gummy', cursive;
   font-size: 2rem;
   color: #5c47c4;
 }
 
-/*Photo Cube
-.store-photos{
-
+/*Photo Cube*/
+.photo-cube{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-self: center;
+  grid-gap: 10px;
+  background-color: #e4f8f9;
+  padding: 3rem 8rem .5rem;
 }
+.store-img{
+  width:100%;
+  border-radius: 20px;
+  box-shadow: 5px 8px 8px rgba(130, 185, 230, 0.2);
+}
+
+/*Support Section*/
+.support{
+  background-color:#2f9ca4;
+  text-align: center;
+  padding: 2rem 0 4rem;
+}
+
+.support h2{
+  color: white;
+}
+
+.support a {
+  background-color: #a384f3; 
+  color: white;
+  text-decoration: none;
+  font-family: 'Sour Gummy', cursive;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  padding: 0.5rem 1.5rem;
+  transition: background-color 0.3s ease;
+  margin: 2rem;
+}
+
+.support a:hover, .support a:focus {
+  background-color: #7049b3;
+}
+
+/*Media query for desktop*/
+@media (min-width: 768px) {
+    h1{
+      font-size: 5rem;
+    }
+
+    .main{
+      flex-direction: row;
+    }
+
+    .main section{
+      flex: 1;
+    }
+
+  }
