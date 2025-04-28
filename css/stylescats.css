@@ -18,13 +18,12 @@ body{
 }
 
 .photobanner{
-  margin: 50px 0;
+  margin: 40px 0;
   height: 500px;
   background-size: cover;
-  background-attachment: fixed;
   background-position: center;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 
 }
@@ -268,12 +267,6 @@ h1{
   background-color: #455fb2;
 }
 
-
-footer{
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
 
 @media screen and (min-width: 800px) {
   .gallery{
