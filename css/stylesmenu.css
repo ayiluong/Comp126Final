@@ -39,10 +39,14 @@ h1 {
 .menu-1, .menu-2 {
   margin: 10px;
   color: #333;
+  background-color: #e0dafd;
+  padding: 15px 30px;
+  border-radius: 25px;
 }
 
 h1, h2 {
   font-family: 'Sour Gummy', cursive;
+  color: #5c47c4;
 }
 
 h3 {
