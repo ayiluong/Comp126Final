@@ -6,7 +6,7 @@ body {
 }
 
 body{
-  font-family: "Bagle Fat One", system-ui;
+  font-family: "League Spartan", sans-serif;
   background-color: white;
   width: 100%;
   color: #333;
@@ -67,7 +67,7 @@ summary{
   padding: 20px 30px;
   border-radius: 15px;
   margin: 15px 0px;
-  font-family: "Bagle Fat One", system-ui;
+  font-family: "League Spartan", sans-serif;
   font-size: 1.23rem;
   transition: all 0.3s ease-in-out;
 }

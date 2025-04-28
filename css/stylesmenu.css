@@ -51,13 +51,13 @@ h1, h2 {
 }
 
 h3 {
-  font-family: "Bagle Fat One", system-ui;
+  font-family: "League Spartan", sans-serif;
 }
 
 li {
   display: flex;
   justify-content: space-between;
-  font-family: "Bagle Fat One", system-ui;
+  font-family: "League Spartan", sans-serif;
 }
 
 .price {

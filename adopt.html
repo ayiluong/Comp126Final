@@ -17,11 +17,12 @@
                 <a href="index.html"><img class = "logo" src = "img/CT-logo.png" alt = "Cat Tales Logos"></a>
                 <nav class="nav-collapse">      
                     <ul>
-                    <li class="menu-item"><a href="index.html" data-scroll>Home</a></li>
-                    <li class="menu-item"><a href="about.html" data-scroll>About</a></li>
-                    <li class="menu-item"><a href="faqs.html" data-scroll>FAQs</a></li>
-                    <li class="menu-item"><a href="cats.html" data-scroll>The Cats</a></li>
-                    <li class="menu-item"><a href="help.html" data-scroll>Help</a></li>
+                        <li class="menu-item"><a href="index.html">Home</a></li>
+                        <li class="menu-item"><a href="about.html">About</a></li>
+                        <li class="menu-item"><a href="menu.html">Menu</a></li>
+                        <li class="menu-item"><a href="cats.html">The Cats</a></li>
+                        <li class="menu-item"><a href="faqs.html">FAQs</a></li>
+                        <li class="menu-item"><a href="help.html">Help</a></li>
                     </ul>
                 </nav>
                 </header>
@@ -39,47 +40,49 @@
                 </div>
         
                 <div class="section">
-                <h2>Contact Us About Adoption!</h2>
+                <h2>Know exactly who you want?  Contact Us about Adoption!</h2>
                 <a href="https://www.shelterluv.com/matchme/adopt/CTNC/Cat">Adoption Form</a>
                 </div>
         
                 <div class="bsf">
+                    <h2>Adoption Speed Dating</h2>
+                    <p>Don't worry if you don't know who to adopt, we can help find the purr-fect match for you!</p>
                     <form>
                         <fieldset class="name">
                         <label for="fname">First Name:</label>
-                        <input type="text" id="fname" name="fname" placeholder="Enter your first name">
+                        <input type="text" id="fname" name="fname" placeholder="Enter your first name" required>
         
                         <label for="lname">Last Name:</label>
-                        <input type="text" id="lname" name="lname" placeholder="Enter your last name">
+                        <input type="text" id="lname" name="lname" placeholder="Enter your last name" required>
                         </fieldset>
 
                         <fieldset class="email">
 
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email">
-                    </fieldset>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </fieldset>
 
                         <fieldset class="location">
-                            <p>Select Location:</p>
-                            <label><input name="location" type="radio" value="At Cat Tales" checked> At Cat Tales</label>
+                            <label>Select Location:</label>
+                            <label><input name="location" type="radio" value="At Cat Tales">At Cat Tales</label>
                             <label><input name="location" type="radio" value="In Foster"> In Foster</label>
                             <label><input name="location" type="radio" value="Any"> Any</label>
                         </fieldset>
 
                         <fieldset class="status">
-                            <p>Select Status:</p>
-                            <label><input name="status" type="radio" value="Available" checked> Available</label>
+                            <label>Select Status:</label>
+                            <label><input name="status" type="radio" value="Available"> Available</label>
                             <label><input name="status" type="radio" value="Pending Adoption"> Pending Adoption</label>
                         </fieldset>
 
                         <fieldset class="traits">
-                            <p>Desired Traits:</p>
-                            <label><input name="trait" type="checkbox" value="Cuddly" checked> Cuddly</label>
-                            <label><input name="trait" type="checkbox" value="Friendly" checked> Friendly</label>
-                            <label><input name="trait" type="checkbox" value="Playful" checked> Playful</label>
-                            <label><input name="trait" type="checkbox" value="Good with Kids" checked> Good with Kids</label>
-                            <label><input name="trait" type="checkbox" value="Litter-Trained" checked> Litter-Trained</label>
-                            <label><input name="trait" type="checkbox" value="Special-Needs" checked> Special-Needs</label>
+                            <label>Desired Traits:</label>
+                            <label><input name="trait" type="checkbox" value="Cuddly"> Cuddly</label>
+                            <label><input name="trait" type="checkbox" value="Friendly"> Friendly</label>
+                            <label><input name="trait" type="checkbox" value="Playful"> Playful</label>
+                            <label><input name="trait" type="checkbox" value="Good with Kids"> Good with Kids</label>
+                            <label><input name="trait" type="checkbox" value="Litter-Trained"> Litter-Trained</label>
+                            <label><input name="trait" type="checkbox" value="Special-Needs" > Special-Needs</label>
                         </fieldset>
 
                         <fieldset class="age">
@@ -98,7 +101,7 @@
                             </select>
                         </fieldset>
 
-                        <input type="submit">Submit!</input>
+                        <input type="submit" value = "Submit!"/>
                         <input type="reset">
 
                     </form>

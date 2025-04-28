@@ -3,6 +3,7 @@ body {
 margin: 0;
 padding: 0;
 border: 0;
+font-size: 18px;
 }
 
 .grid-container {
@@ -35,7 +36,7 @@ h1 {
 }
 
 .intro h3 {
-    font-family: "Bagle Fat One", system-ui;
+    font-family: "League Spartan", sans-serif;
     text-align: center;
     color: #333;
 }
@@ -49,7 +50,7 @@ h1 {
 /* Info section */
 .info {
     grid-area: info;
-    font-family: "Bagle Fat One", system-ui;
+    font-family: "League Spartan", sans-serif;
     background-color: white;
     color: #333;
     display: flex;
@@ -89,7 +90,7 @@ h1 {
 
 
 .form h1 {
-    font-family: "Bagle Fat One", system-ui;
+    font-family:"League Spartan", sans-serif;
     text-align: center;
     color: #333;
 }
@@ -101,7 +102,7 @@ h1 {
 }
 
 .form label, input {
-    font-family: "Bagle Fat One", system-ui;
+    font-family: "League Spartan", sans-serif;
     color: #333;
 }
 
