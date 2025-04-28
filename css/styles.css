@@ -45,7 +45,7 @@ body{
     grid-area: main;
   }
 
-  .main-img h1 {
+  h1 {
     font-family: 'Bagel Fat One', cursive;
     font-size: 3rem;
     color: white;
@@ -151,6 +151,10 @@ body{
 /* desktop view */
 
   @media (min-width: 768px) {
+    h1{
+      font-size: 5rem;
+    }
+
     .main{
       flex-direction: row;
     }
