@@ -3,22 +3,13 @@ body {
 margin: 0;
 padding: 0;
 border: 0;
-font-size: 18px;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr 1fr 1fr auto;
+    grid-template-rows: auto 1fr auto auto auto;
     grid-template-areas: "navbar" "intro" "info" "form" "footer";
-}
-
-header {
-    grid-area: navbar;
-}
-
-footer {
-    grid-area: footer;
 }
 
 /* For intro section */
